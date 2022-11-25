@@ -1,0 +1,1 @@
+trebuie sa mai lucrez la mesajele de eroare si input
