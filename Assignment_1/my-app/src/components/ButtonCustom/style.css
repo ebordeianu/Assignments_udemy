@@ -1,0 +1,13 @@
+.btn_default {
+  color: goldenrod;
+  background-color: darkcyan;
+  width: 5em;
+  height: 2.5em;
+}
+
+.btn_primary {
+  color: #111;
+  background-color: goldenrod;
+  width: 5em;
+  height: 2.5em;
+}

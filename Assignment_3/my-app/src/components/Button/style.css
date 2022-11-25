@@ -1,0 +1,19 @@
+.primary_button {
+  width: 5em;
+  height: 3em;
+  background-color: goldenrod;
+}
+
+.default_button {
+  width: 5em;
+  height: 3em;
+  background-color: tomato;
+}
+
+.primary_selected {
+  background-color: aqua;
+}
+
+.primary_notSelected {
+  background-color: rgb(172, 19, 196);
+}

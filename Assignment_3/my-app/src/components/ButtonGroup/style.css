@@ -1,0 +1,15 @@
+.row {
+  display: flex;
+  flex-direction: row;
+  background-color: blueviolet;
+  width: 50em;
+  height: 50em;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  background-color: yellow;
+  width: 50em;
+  height: 50em;
+}
