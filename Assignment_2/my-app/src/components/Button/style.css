@@ -2,4 +2,9 @@
 .btn_default {
   background-color: darkcyan;
   color: red;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  margin-top: 0.5em;
+  height: 1.5em;
+  width: 3.5em;
 }

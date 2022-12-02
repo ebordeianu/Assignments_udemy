@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Button from '../Button';
 import ButtonGroup from '../ButtonGroup';
+import './style.css';
 
 export default function DisplayButtons() {
   const [selectedButton, setSelectedButton] = useState<number>(-1);
@@ -11,7 +12,7 @@ export default function DisplayButtons() {
   };
 
   return (
-    <div>
+    <div id='main_container'>
       <h2>Display Buttons</h2>
       <h2>Primary</h2>
       <Button type='primary' className='button' text='Yess' />
@@ -19,7 +20,7 @@ export default function DisplayButtons() {
       <Button type='default' className='button' text='Yes' />
       <h2>Button Group</h2>
       <ButtonGroup
-        direction='row'
+        direction='col'
         clickOn={handleButtonGroupClick}
         selected={selectedButton}
       >

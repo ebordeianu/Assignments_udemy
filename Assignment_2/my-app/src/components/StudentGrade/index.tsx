@@ -26,6 +26,7 @@ export default function StudentGrade() {
   const [grade, setGrade] = useState<number>(0);
   const [errMsgName, setErrMsgName] = useState<string>();
   const [errMsgGrade, setErrMsgGrade] = useState<string>();
+  const [clickable, setClickable] = useState(false);
 
   const handleNameInputChange = (e: ChangeEvent<HTMLInputElement>) => {
     if (String(e.target.value).length === 0) {
@@ -58,7 +59,11 @@ export default function StudentGrade() {
   };
 
   const handleAddStudent = () => {
-    const newStudent: StudentGradeDetails = { studentName: name, grade: grade };
+    setClickable(true);
+    const newStudent: StudentGradeDetails = {
+      studentName: name,
+      grade: grade,
+    };
     console.log('newStudent', newStudent);
     setStudents([...students, newStudent]);
     console.log('Button pressed');
@@ -68,7 +73,7 @@ export default function StudentGrade() {
 
   return (
     <div className='main_container'>
-      <h2>Students Grade</h2>
+      <h1>Students Grade</h1>
       <ul id='list'>
         {students.map((student, index) => {
           return (
@@ -82,24 +87,24 @@ export default function StudentGrade() {
       <Input
         labelText='Student Name'
         value={name}
-        width={80}
-        height={30}
         change={(e) => handleNameInputChange(e)}
         error={errMsgName}
       />
       <Input
         labelText='Grade'
         value={grade}
-        width={40}
-        height={30}
         change={(e) => handleGradeInputChange(e)}
         error={errMsgGrade}
       />
-      <Button
-        type={'primary'}
-        click={() => handleAddStudent()}
-        buttonName='Add'
-      />
+      {clickable ? (
+        <Button
+          type={'primary'}
+          click={() => handleAddStudent()}
+          buttonName='Add'
+        />
+      ) : (
+        <Button type='default' buttonName='Add' />
+      )}
       <StudentsWith90AndAbove students={students} />
       <StudentsWith70AndBelow students={students} />
     </div>

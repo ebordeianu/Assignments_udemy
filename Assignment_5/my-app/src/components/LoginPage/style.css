@@ -1,0 +1,32 @@
+#login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* height: 40em; */
+  /* width: 50em; */
+}
+
+#input_username_block {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: 17em;
+}
+
+#input_password_block {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+#username_input {
+  background-color: darkcyan;
+  color: goldenrod;
+}
+
+#password_input {
+  background-color: darkcyan;
+  color: goldenrod;
+}

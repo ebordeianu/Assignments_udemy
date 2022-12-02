@@ -1,0 +1,9 @@
+#primary {
+  background-color: rgba(38, 6, 219, 0.959);
+  color: orange;
+}
+
+#default {
+  background-color: rgba(219, 191, 6, 0.959);
+  color: rgb(177, 17, 213);
+}
