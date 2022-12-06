@@ -1,3 +1,0 @@
-Assignment 1 => ar mai trebui imbunatatita performanta
-Assignment 2 => modificari la input + mesajele de eroare
-Assignment 3 => modificare la randarea butoanelor
