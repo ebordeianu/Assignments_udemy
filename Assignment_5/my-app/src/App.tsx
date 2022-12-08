@@ -10,9 +10,10 @@ function App() {
     <div className='App'>
       <BrowserRouter>
         <Routes>
+          <Route element={<LoginPage />} path={ROUTE.LOGIN} />
           <Route element={<AboutPage />} path={ROUTE.ABOUT} />
           <Route element={<HomePage />} path={ROUTE.HOME} />
-          <Route element={<LoginPage />} path={ROUTE.LOGIN} />
+
           <Route path='*' element={<Navigate to='/login' replace />} />
         </Routes>
       </BrowserRouter>
@@ -21,3 +22,13 @@ function App() {
 }
 
 export default App;
+
+export function divide(a: number, b: number): number {
+  // Sure, we cannot divide by 0,
+  // so in this case we will throw an error.
+  if (b === 0) {
+    throw new Error("You can't divide by zero.");
+  }
+
+  return Math.round(a / b);
+}

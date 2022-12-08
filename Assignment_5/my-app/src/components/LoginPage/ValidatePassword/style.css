@@ -1,0 +1,20 @@
+#container {
+  display: flex;
+  flex-direction: column;
+}
+
+#uppercase_is_valid,
+#lowercase_is_valid,
+#digits_is_valid,
+#passwordLength_is_valid,
+#specialCharacters_is_valid {
+  color: green;
+}
+
+#uppercase_is_invalid,
+#lowercase_is_invalid,
+#digits_is_invalid,
+#passwordLength_is_invalid,
+#specialCharacters_is_invalid {
+  color: red;
+}
